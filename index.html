@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahammad Nabuhan Abdulla N</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a305fdfff8.js" crossorigin="anonymous"></script>"
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav><img src="images/n (1).png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm Ahammad <span>Nabuhan</span> <br>Abdulla</h1>
+    </div>
+    </div>
+   </div> 
+   <!--------------about---------------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><br>I am a final year B.Tech student with a burning desire to become a web developer.My journey through academia has
+                    been a source of both knowledge and inspiration, fueling my ambition to excel in the world of technology.
+                    With unwavering determination and a strong work ethic, I am diligently working toward achieving my goals.
+                    Learning the intricacies of web development has become my passion, and I eagerly embrace every challenge as an
+                    opportunity for growth.I am on a relentless pursuit of honing my skills and turning my dreams into <br></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Develop Website/Web App</li>
+                        <li><span>App Development</span><br>Building Android Apps</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-Current</span><br>B-Tech from KTU Trivandrum</li>
+                        <li><span>2018</span><br>Higher Secondary from Kerala State Board Of Exam</li>
+                        <li><span>2016</span><br>High School from Kerala State Board Of Exam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   </div>
+   <!-----------services--------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2><br>
+                <p>Services in designing, building, and maintaining websites and web applications,
+                    using technical proficiency to create visually appealing and user-friendly online platforms.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-play"></i>
+                <h2>App Development</h2><br>
+                <p>Provides specialized services in designing, developing, and maintaining mobile applications for Android platforms.
+                    I leverage my technical skills to create user-friendly and feature-rich apps,
+                    delivering seamless experiences to users.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2><br>
+                <p>Offers expertise in crafting user interfaces and experiences for digital products,
+                    such as websites and mobile apps. They meticulously design the visual elements and user flows,
+                    ensuring an intuitive and visually appealing interaction with the product. <p>
+                    <a href="#">Learn more</a>
+            </div>
+            
+        </div>
+
+    </div>
+   </div>
+   <br>
+   <br>
+   <!--------------contact--------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1><br>
+            <p><i class="fa-solid fa-envelope"></i>nabupopzy@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 9567227335</p>
+        
+            <div class="social-icons">
+                <a href="https://instagram.com/_nabooo.__"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/abdullanabuhan"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ahammad-nabuhan-abdulla-n-41b367257"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AhammadNabuhanAbdullaN"><i class="fa-brands fa-github"></i></a>
+            </div>
+            </div>
+      </div>
+        
+
+    </div>
+   </div>
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+        function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+   </script>
+</body>
+</html>
